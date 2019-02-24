@@ -16,6 +16,14 @@
         <hadoop.version>2.7.4</hadoop.version>
         <encoding>UTF-8</encoding>
     </properties>
+    <!--添加CDH仓库-->
+    <repositories>
+        <repository>
+            <id>cloudera</id>
+            <name>cloudera</name>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+    </repositories>
 
 
     <dependencies>
