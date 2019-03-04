@@ -5,6 +5,7 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 // col("...") is preferable to df.col("...")
 import static org.apache.spark.sql.functions.col;
+
 public class DataFrameOperationJava {
     public static void main(String[] args) {
         SparkSession spark = SparkSession.builder().master("local[2]").appName("DataFrameOperationJava").getOrCreate();
