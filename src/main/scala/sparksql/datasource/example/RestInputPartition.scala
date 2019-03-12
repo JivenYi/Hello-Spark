@@ -10,5 +10,7 @@ import org.apache.spark.sql.sources.v2.reader.{InputPartition, InputPartitionRea
   * @param xPath
   */
 class RestInputPartition(url: String, params: String, xPath: String) extends InputPartition[InternalRow]{
-  override def createPartitionReader(): InputPartitionReader[InternalRow] = ???
+  override def createPartitionReader(): InputPartitionReader[InternalRow] = {
+    new RestInputPartitionReader(url,params,xPath)
+  }
 }
